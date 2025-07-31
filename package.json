@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-beautiful-dnd": "^13.1.8",
     "dnd-kit-sortable-tree": "0.1.52",
     "react": "^19.1.0",
     "react-beautiful-dnd": "^13.1.1",

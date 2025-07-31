@@ -3,6 +3,7 @@
 // NestedDndList.tsx
 import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import type { DropResult } from "react-beautiful-dnd";
 
 interface Item {
   id: string;
@@ -127,7 +128,7 @@ const NestedDndList: React.FC = () => {
     return null;
   };
 
-  const onDragEnd = (result) => {
+  const onDragEnd = (result: DropResult) => {
     const { destination, draggableId } = result;
     if (!destination) return;
 
